@@ -75,7 +75,7 @@ jobs:
           sudo docker rm $CONTAINER_NAME || true
 
           # Run new container
-          sudo docker run -d --name springboot-docker-app -p 80:8080 $REGISTRY/$IMAGE_NAME:$TAG
+          sudo docker run -d --name springboot-docker-app -p 80:80 $REGISTRY/$IMAGE_NAME:$TAG
 
           EOF
           

@@ -18,13 +18,17 @@ COPY src ./src
 # Build the application
 RUN ./mvnw clean package -DskipTests
 
-# Stage 2: Runtime image
-FROM eclipse-temurin:17-jre
+# Stage 2: Runtime image with Nginx
+FROM nginx:alpine
+
+RUN apk add --no-cache openjdk17-jre
 
 WORKDIR /app
 
 COPY --from=builder /app/target/*.jar app.jar
 
-EXPOSE 8080
+COPY nginx.conf /etc/nginx/nginx.conf
 
-ENTRYPOINT ["java","-jar","app.jar"]
+EXPOSE 80
+
+CMD sh -c "java -jar app.jar & nginx -g 'daemon off;'"

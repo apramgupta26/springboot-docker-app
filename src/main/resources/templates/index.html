@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SpringOps Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+
+<h2>
+☕ SpringOps
+</h2>
+
+
+<a class="active">
+📊 Dashboard
+</a>
+
+
+<a>
+🌐 API Monitor
+</a>
+
+
+<a>
+🚀 Deployment
+</a>
+
+
+<a>
+🗄 Database
+</a>
+
+
+<a>
+☁ Infrastructure
+</a>
+
+
+<a>
+📜 Logs
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- Main Dashboard -->
+
+<div class="main">
+
+
+
+
+
+<header>
+
+
+<div>
+
+<h1>
+Spring Boot Operations Center
+</h1>
+
+
+<p>
+Backend monitoring and deployment intelligence platform
+</p>
+
+
+</div>
+
+
+
+<div class="status">
+
+● SYSTEM ONLINE
+
+</div>
+
+
+</header>
+
+
+
+
+
+
+
+
+<!-- System Overview -->
+
+
+<section>
+
+
+<h2>
+System Overview
+</h2>
+
+
+
+<div class="stats">
+
+
+<div class="card">
+
+<h3>
+☕ Backend Service
+</h3>
+
+
+<h1>
+Spring Boot
+</h1>
+
+
+<span>
+● Running
+</span>
+
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h3>
+☕ Runtime
+</h3>
+
+
+<h1>
+Java 21
+</h1>
+
+
+<span>
+● Active
+</span>
+
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h3>
+🗄 Database
+</h3>
+
+
+<h1>
+MySQL
+</h1>
+
+
+<span>
+● Connected
+</span>
+
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h3>
+☁ Cloud Server
+</h3>
+
+
+<h1>
+AWS EC2
+</h1>
+
+
+<span>
+● Healthy
+</span>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+<section>
+
+<h2>
+Infrastructure Monitoring
+</h2>
+
+
+<div class="stats">
+
+
+<div class="card">
+
+<h3>
+🖥 CPU Usage
+</h3>
+
+
+<h1>
+32%
+</h1>
+
+
+<span>
+● Normal
+</span>
+
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>
+🧠 Memory Usage
+</h3>
+
+
+<h1>
+58%
+</h1>
+
+
+<span>
+● Healthy
+</span>
+
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>
+⚡ API Response
+</h3>
+
+
+<h1>
+120 ms
+</h1>
+
+
+<span>
+● Fast
+</span>
+
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>
+🐳 Docker Container
+</h3>
+
+
+<h1>
+Running
+</h1>
+
+
+<span>
+● Active
+</span>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- Architecture -->
+
+
+<section>
+
+
+<h2>
+Backend Architecture
+</h2>
+
+
+<div class="architecture">
+
+
+<div>
+👤
+<br>
+Client
+</div>
+
+
+<div>
+→
+</div>
+
+
+<div>
+🎮
+<br>
+Controller
+</div>
+
+
+<div>
+→
+</div>
+
+
+<div>
+⚙️
+<br>
+Service
+</div>
+
+
+<div>
+→
+</div>
+
+
+<div>
+📦
+<br>
+Repository
+</div>
+
+
+<div>
+→
+</div>
+
+
+<div>
+🗄
+<br>
+MySQL
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- Deployment -->
+
+
+<section>
+
+
+<h2>
+CI/CD Pipeline
+</h2>
+
+
+
+<div class="pipeline">
+
+
+<div>
+👨‍💻
+<br>
+GitHub
+</div>
+
+
+<div>
+⚙️
+<br>
+Actions
+</div>
+
+
+<div>
+🔨
+<br>
+Maven
+</div>
+
+
+<div>
+🐳
+<br>
+Docker
+</div>
+
+
+<div>
+📦
+<br>
+GHCR
+</div>
+
+
+<div>
+☁️
+<br>
+AWS EC2
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+<!-- API Monitor -->
+
+
+<section>
+
+
+<h2>
+API Health Monitor
+</h2>
+
+
+
+<table>
+
+
+<tr>
+
+<th>
+Endpoint
+</th>
+
+
+<th>
+Method
+</th>
+
+
+<th>
+Status
+</th>
+
+
+</tr>
+
+
+
+
+<tr>
+
+<td>
+/api/users
+</td>
+
+
+<td>
+GET
+</td>
+
+
+<td class="green">
+✔ 200 OK
+</td>
+
+
+</tr>
+
+
+
+
+
+<tr>
+
+<td>
+/api/login
+</td>
+
+
+<td>
+POST
+</td>
+
+
+<td class="green">
+✔ 200 OK
+</td>
+
+
+</tr>
+
+
+
+
+
+<tr>
+
+<td>
+/api/products
+</td>
+
+
+<td>
+GET
+</td>
+
+
+<td class="green">
+✔ 200 OK
+</td>
+
+
+</tr>
+
+
+</table>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- Technology -->
+
+
+<section>
+
+
+<h2>
+Technology Stack
+</h2>
+
+
+
+<div class="tech">
+
+
+<div>
+☕
+<br>
+Java
+</div>
+
+
+<div>
+🌱
+<br>
+Spring Boot
+</div>
+
+
+<div>
+🔨
+<br>
+Maven
+</div>
+
+
+<div>
+🐳
+<br>
+Docker
+</div>
+
+
+<div>
+📦
+<br>
+GHCR
+</div>
+
+
+<div>
+☁️
+<br>
+AWS EC2
+</div>
+
+
+<div>
+🗄
+<br>
+MySQL
+</div>
+
+
+
+</div>
+
+
+</section>
+
+<section>
+
+
+<h2>
+Deployment History
+</h2>
+
+
+<div class="timeline">
+
+
+<div>
+
+<h3>
+🚀 Version 1.0
+</h3>
+
+<p>
+Spring Boot application deployed successfully
+</p>
+
+<span>
+Today
+</span>
+
+</div>
+
+
+
+
+<div>
+
+<h3>
+🐳 Docker Image Created
+</h3>
+
+<p>
+Image pushed to GitHub Container Registry
+</p>
+
+<span>
+Today
+</span>
+
+</div>
+
+
+
+
+<div>
+
+<h3>
+☁ AWS Deployment
+</h3>
+
+<p>
+Application running on EC2 instance
+</p>
+
+<span>
+Completed
+</span>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+<footer>
+
+
+<h2>
+Deployment Successful 🚀
+</h2>
+
+
+<p>
+Spring Boot • Docker • GitHub Actions • AWS EC2 • MySQL
+</p>
+
+
+<p>
+Developed by Apram Gupta
+</p>
+
+
+</footer>
+
+
+
+</div>
+
+
+
+</body>
+
+</html>

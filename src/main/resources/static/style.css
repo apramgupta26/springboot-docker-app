@@ -1,0 +1,919 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Inter","Segoe UI",sans-serif;
+}
+
+
+body{
+
+    background:
+    radial-gradient(circle at top left,#1e3a8a,#020617 45%);
+
+    color:white;
+
+    min-height:100vh;
+
+}
+
+
+
+/* SIDEBAR */
+
+.sidebar{
+
+    position:fixed;
+
+    width:260px;
+
+    height:100vh;
+
+    background:rgba(15,23,42,0.85);
+
+    backdrop-filter:blur(20px);
+
+    border-right:1px solid rgba(255,255,255,.08);
+
+    padding:35px 25px;
+
+
+}
+
+
+
+.sidebar h2{
+
+    font-size:30px;
+
+    color:#6db33f;
+
+    margin-bottom:50px;
+
+}
+
+
+
+.sidebar a{
+
+    display:block;
+
+    padding:16px;
+
+    margin-bottom:12px;
+
+    color:#cbd5e1;
+
+    text-decoration:none;
+
+    border-radius:12px;
+
+    transition:.3s;
+
+
+}
+
+
+
+.sidebar a:hover{
+
+    background:
+    rgba(109,179,63,.15);
+
+    color:#6db33f;
+
+    transform:translateX(8px);
+
+}
+
+
+
+
+
+
+/* MAIN */
+
+
+.main{
+
+    margin-left:260px;
+
+    padding:40px 60px;
+
+}
+
+
+
+
+
+
+
+/* HEADER */
+
+
+header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+
+
+header h1{
+
+    font-size:45px;
+
+    letter-spacing:-1px;
+
+}
+
+
+
+header p{
+
+    color:#94a3b8;
+
+    margin-top:10px;
+
+}
+
+
+
+
+
+.status{
+
+    padding:14px 28px;
+
+    border-radius:40px;
+
+    background:
+
+    rgba(34,197,94,.15);
+
+    border:1px solid #22c55e;
+
+    color:#4ade80;
+
+    font-weight:600;
+
+}
+
+
+
+
+
+
+
+/* CARDS */
+
+
+.stats{
+
+    margin-top:50px;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(230px,1fr));
+
+    gap:25px;
+
+}
+
+
+
+.card{
+
+
+    background:
+
+    rgba(255,255,255,.06);
+
+
+    backdrop-filter:blur(15px);
+
+
+    border:
+
+    1px solid rgba(255,255,255,.1);
+
+
+    padding:30px;
+
+
+    border-radius:22px;
+
+
+    transition:.4s;
+
+
+}
+
+
+
+.card:hover{
+
+
+    transform:translateY(-10px);
+
+
+    border-color:#6db33f;
+
+
+    box-shadow:
+    0 20px 40px rgba(0,0,0,.4);
+
+
+}
+
+
+
+.card h3{
+
+    color:#94a3b8;
+
+}
+
+
+
+.card h1{
+
+    margin:20px 0;
+
+    font-size:32px;
+
+}
+
+
+
+.card span{
+
+    color:#4ade80;
+
+}
+
+
+
+
+
+
+
+
+/* SECTION */
+
+
+section{
+
+    margin-top:70px;
+
+}
+
+
+
+section h2{
+
+    font-size:30px;
+
+    margin-bottom:30px;
+
+}
+
+
+
+
+
+
+
+/* FLOW */
+
+
+.architecture{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+.architecture div{
+
+
+    width:140px;
+
+    padding:25px;
+
+    text-align:center;
+
+
+    background:
+
+    rgba(255,255,255,.08);
+
+
+    border-radius:18px;
+
+
+    border:
+
+    1px solid rgba(255,255,255,.1);
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.architecture div:hover{
+
+    scale:1.08;
+
+    border-color:#6db33f;
+
+}
+
+
+
+
+
+
+
+
+/* PIPELINE */
+
+
+.pipeline{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+.pipeline div{
+
+
+    width:150px;
+
+    padding:25px;
+
+
+    text-align:center;
+
+
+    border-radius:20px;
+
+
+    background:
+
+    linear-gradient(
+    145deg,
+    rgba(30,58,138,.6),
+    rgba(2,6,23,.8)
+    );
+
+
+    border:1px solid #334155;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.pipeline div:hover{
+
+    transform:scale(1.08);
+
+    border-color:#6db33f;
+
+}
+
+
+
+
+
+
+
+/* TABLE */
+
+
+table{
+
+    width:100%;
+
+    background:
+
+    rgba(255,255,255,.06);
+
+    backdrop-filter:blur(15px);
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    border-collapse:collapse;
+
+}
+
+
+
+th{
+
+    background:#111827;
+
+    padding:20px;
+
+    text-align:left;
+
+}
+
+
+
+td{
+
+    padding:18px;
+
+    border-bottom:1px solid #334155;
+
+}
+
+
+
+.green{
+
+    color:#4ade80;
+
+    font-weight:bold;
+
+}
+
+
+
+
+
+
+
+/* TECHNOLOGY */
+
+
+.tech{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(160px,1fr));
+
+    gap:25px;
+
+}
+
+
+
+.tech div{
+
+    background:
+
+    rgba(255,255,255,.07);
+
+
+    padding:30px;
+
+
+    border-radius:20px;
+
+
+    text-align:center;
+
+
+    border:
+
+    1px solid rgba(255,255,255,.1);
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.tech div:hover{
+
+
+    transform:translateY(-8px);
+
+    border-color:#6db33f;
+
+
+}
+
+
+
+
+
+
+
+
+footer{
+
+    margin-top:70px;
+
+    text-align:center;
+
+    padding:40px;
+
+
+    background:
+
+    rgba(2,6,23,.8);
+
+
+}
+
+
+
+footer h2{
+
+    color:#6db33f;
+
+}
+
+
+
+
+
+
+
+
+@media(max-width:900px){
+
+
+.sidebar{
+
+    display:none;
+
+}
+
+
+
+.main{
+
+    margin:0;
+
+    padding:25px;
+
+}
+
+
+
+header{
+
+    flex-direction:column;
+
+    gap:25px;
+
+}
+
+
+
+header h1{
+
+    font-size:32px;
+
+}
+
+
+}
+/* =========================
+   Premium Dashboard Effects
+========================= */
+
+
+/* Page Load Animation */
+
+.main{
+
+    animation:fadeIn 0.8s ease;
+
+}
+
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+
+
+/* Active Sidebar */
+
+.sidebar .active{
+
+
+    background:
+
+    rgba(109,179,63,.18);
+
+
+    color:#6db33f;
+
+
+    border-left:
+
+    4px solid #6db33f;
+
+
+}
+
+
+
+
+
+
+/* Online Pulse */
+
+.status::before{
+
+
+    content:"";
+
+    display:inline-block;
+
+
+    width:10px;
+
+    height:10px;
+
+
+    background:#22c55e;
+
+
+    border-radius:50%;
+
+
+    margin-right:10px;
+
+
+    animation:pulse 1.5s infinite;
+
+
+}
+
+
+
+@keyframes pulse{
+
+
+    0%{
+
+        box-shadow:
+
+        0 0 0 0 rgba(34,197,94,.7);
+
+    }
+
+
+    70%{
+
+        box-shadow:
+
+        0 0 0 12px rgba(34,197,94,0);
+
+    }
+
+
+    100%{
+
+        box-shadow:
+
+        0 0 0 0 rgba(34,197,94,0);
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+/* Card Floating Effect */
+
+
+.card{
+
+    animation:
+
+    floatCard 5s infinite ease-in-out;
+
+
+}
+
+
+
+@keyframes floatCard{
+
+
+    0%,100%{
+
+        transform:translateY(0);
+
+    }
+
+
+    50%{
+
+        transform:translateY(-6px);
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+/* Pipeline Glow */
+
+
+.pipeline div:hover{
+
+
+    box-shadow:
+
+    0 0 30px rgba(109,179,63,.25);
+
+
+}
+
+
+
+
+
+
+
+
+/* Table Hover */
+
+
+tr{
+
+    transition:.3s;
+
+}
+
+
+
+tr:hover{
+
+
+    background:
+
+    rgba(255,255,255,.05);
+
+
+}
+
+
+
+
+
+
+
+
+/* Smooth Scroll */
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+/* Infrastructure Timeline */
+
+
+.timeline{
+
+
+    border-left:3px solid #6db33f;
+
+    padding-left:30px;
+
+}
+
+
+
+.timeline div{
+
+
+    background:
+
+    rgba(255,255,255,.06);
+
+
+    padding:25px;
+
+
+    margin-bottom:25px;
+
+
+    border-radius:18px;
+
+
+    border:
+
+    1px solid rgba(255,255,255,.1);
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.timeline div:hover{
+
+
+    transform:translateX(10px);
+
+
+    border-color:#6db33f;
+
+
+}
+
+
+
+.timeline h3{
+
+
+    color:#6db33f;
+
+    margin-bottom:10px;
+
+}
+
+
+
+.timeline p{
+
+    color:#cbd5e1;
+
+}
+
+
+.timeline span{
+
+    color:#94a3b8;
+
+    font-size:14px;
+
+}
